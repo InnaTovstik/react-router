@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BookList from './BookList.js';
-import BookDetail from './BookDetail.js';
+import BookList from './BookList';
+import BookDetail from './BookDetail';
 import './styles.css';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Router>
       <Routes>

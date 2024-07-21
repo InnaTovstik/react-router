@@ -1,4 +1,14 @@
-export const books = [
+export interface Book {
+  id: number;
+  name: string;
+  author: string;
+  genre: string;
+  rating: string;
+  description: string;
+  image: string;
+}
+
+export const books: Book[] = [
   {
     id: 1,
     name: 'Кобзар',
@@ -42,7 +52,7 @@ export const books = [
     genre: 'Історичний роман',
     rating: '4.5',
     description: 'Перший історичний роман в українській літературі, що описує події в Україні після смерті Богдана Хмельницького.',
-    
+    image: 'https://via.placeholder.com/150'
   },
   {
     id: 6,
